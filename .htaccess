@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^$ public/ [L] #Suunab ümber public index lehele [L] lõpetab selle käskluse.
+    RewriteRule (.*) public/$1 [L]
+</IfModule>
